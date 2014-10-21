@@ -11,10 +11,8 @@
 #
 default: &default
   adapter: postgresql
-  encoding: utf8
-  pool: 5
-  password:
-  socket: /opt/local/var/run/mysql5/mysqld.sock
+  host: localhost
+  database: app-dev
 
 development:
   <<: *default
